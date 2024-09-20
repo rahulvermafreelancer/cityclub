@@ -1,8 +1,8 @@
-import React from 'react';
-import {View, SafeAreaView, ScrollView, Text, StatusBar} from 'react-native';
+import React, {useRef, useState} from 'react';
+import {View, SafeAreaView, Text, StatusBar} from 'react-native';
 import Layout from '../components/layout/Layout';
 import SearchBar from '../components/SearchBar';
-import Categories from '../category/Categories';
+import Categories from '../components/category/Categories';
 
 const HomeScreen = () => {
   return (
