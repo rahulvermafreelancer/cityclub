@@ -7,6 +7,7 @@ import {bannerData} from '../data/Data';
 const StartupCarousel = () => {
   const isCarousel = useRef(null);
   const [index, setIndex] = useState(0);
+
   return (
     <View>
       <Carousel

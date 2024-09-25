@@ -8,8 +8,11 @@ import {
 } from 'react-native';
 import React from 'react';
 import StartupCarousel from '../components/StartupCarousel';
+import {useNavigation} from '@react-navigation/native';
 
 const StartupScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.logoView}>
@@ -18,10 +21,14 @@ const StartupScreen = () => {
       <View style={styles.BannerView}>
         <StartupCarousel />
       </View>
-      <TouchableOpacity style={styles.loginButton}>
+      <TouchableOpacity
+        style={styles.loginButton}
+        onPress={() => navigation.navigate('login')}>
         <Text style={styles.loginButtonText}>Log In</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.SignupButton}>
+      <TouchableOpacity
+        style={styles.SignupButton}
+        onPress={() => navigation.navigate('signup')}>
         <Text style={styles.signupButtonText}>Sign Up</Text>
       </TouchableOpacity>
       <Text style={styles.policyText}>
@@ -52,7 +59,7 @@ const styles = StyleSheet.create({
   loginButton: {
     width: '90%',
     alignSelf: 'center',
-    marginVertical: '%',
+    marginVertical: '5%',
     borderRadius: 30,
     backgroundColor: '#FCC434',
     paddingVertical: 15,
