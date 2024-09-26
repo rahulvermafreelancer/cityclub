@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#000000',
     flex: 1,
-    paddingHorizontal: 5,
-    paddingVertical: 5,
+    paddingHorizontal: '2%',
+    paddingVertical: '5%',
   },
   BannerView: {
     alignSelf: 'center',
@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 20,
     fontWeight: '600',
+    color: '#000',
   },
   SignupButton: {
     width: '90%',

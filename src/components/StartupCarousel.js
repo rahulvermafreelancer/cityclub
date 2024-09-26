@@ -11,7 +11,7 @@ const StartupCarousel = () => {
   return (
     <View>
       <Carousel
-        layout="events"
+        layout="sample"
         layoutCardOffset={9}
         ref={isCarousel}
         data={bannerData}

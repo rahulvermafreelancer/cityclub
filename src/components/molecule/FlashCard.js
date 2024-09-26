@@ -1,6 +1,6 @@
 import {View, Text, StyleSheet, Image, Dimensions} from 'react-native';
 import React from 'react';
-export const SLIDER_WIDTH = Dimensions.get('window').width - 30;
+export const SLIDER_WIDTH = Dimensions.get('window').width - 10;
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 
 const FlashCard = ({item, index}) => {
@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
   },
   CarosuelImage: {
     width: ITEM_WIDTH,
-    height: 300,
+    height: 250,
   },
   Content: {
-    marginVertical: 20,
+    marginVertical: '1%',
   },
   CarosuelHeading: {
     color: '#ffffff',
