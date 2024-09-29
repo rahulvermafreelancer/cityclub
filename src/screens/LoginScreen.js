@@ -34,6 +34,8 @@ const LoginScreen = ({navigation}) => {
             value={username}
             color="#fff"
             placeholder="Username"
+            cursorColor="#fff"
+            placeholderTextColor="#fff"
           />
         </View>
       </View>
@@ -47,6 +49,8 @@ const LoginScreen = ({navigation}) => {
             value={password}
             onChangeText={text => setPassword(text)}
             style={styles.inputTextbox}
+            cursorColor="#fff"
+            placeholderTextColor="#fff"
           />
         </View>
       </View>
@@ -61,12 +65,14 @@ const LoginScreen = ({navigation}) => {
             value={phone}
             onChangeText={text => setPhone(text)}
             style={styles.inputTextbox}
+            cursorColor="#fff"
+            placeholderTextColor="#fff"
           />
         </View>
       </View>
       <TouchableOpacity
         style={styles.loginButton}
-        onPress={() => navigation.navigate('login')}>
+        onPress={() => navigation.navigate('otp')}>
         <Text style={styles.loginButtonText}>Continue</Text>
       </TouchableOpacity>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>

@@ -1,14 +1,12 @@
 import React from 'react';
-import {View, SafeAreaView, ScrollView, Text} from 'react-native';
+import {View, SafeAreaView, Text} from 'react-native';
 
 const TabBar = () => {
   return (
     <SafeAreaView>
-      <ScrollView>
-        <View>
-          <Text>Hello from TabBar</Text>
-        </View>
-      </ScrollView>
+      <View>
+        <Text>Hello from TabBar</Text>
+      </View>
     </SafeAreaView>
   );
 };

@@ -40,6 +40,8 @@ const SignupScreen = ({navigation}) => {
                 value={name}
                 color="#fff"
                 placeholder="Name"
+                cursorColor="#fff"
+                placeholderTextColor="#fff"
               />
             </View>
           </View>
@@ -54,6 +56,8 @@ const SignupScreen = ({navigation}) => {
                 value={email}
                 color="#fff"
                 placeholder="Email"
+                cursorColor="#fff"
+                placeholderTextColor="#fff"
               />
             </View>
           </View>
@@ -68,6 +72,8 @@ const SignupScreen = ({navigation}) => {
                 value={age}
                 color="#fff"
                 placeholder="Age"
+                cursorColor="#fff"
+                placeholderTextColor="#fff"
               />
             </View>
           </View>
@@ -82,6 +88,8 @@ const SignupScreen = ({navigation}) => {
                 value={username}
                 color="#fff"
                 placeholder="Username"
+                cursorColor="#fff"
+                placeholderTextColor="#fff"
               />
             </View>
           </View>
@@ -95,6 +103,8 @@ const SignupScreen = ({navigation}) => {
                 value={password}
                 onChangeText={text => setPassword(text)}
                 style={styles.inputTextbox}
+                cursorColor="#fff"
+                placeholderTextColor="#fff"
               />
             </View>
           </View>
@@ -109,6 +119,8 @@ const SignupScreen = ({navigation}) => {
                 value={phone}
                 onChangeText={text => setPhone(text)}
                 style={styles.inputTextbox}
+                cursorColor="#fff"
+                placeholderTextColor="#fff"
               />
             </View>
           </View>
@@ -184,7 +196,6 @@ const styles = StyleSheet.create({
   loginButton: {
     width: '90%',
     alignSelf: 'center',
-    // marginVertical: '5%',
     marginTop: '5%',
     borderRadius: 30,
     backgroundColor: '#FCC434',
