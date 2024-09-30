@@ -1,22 +1,29 @@
 import React from 'react';
-import {View, SafeAreaView, Text, StatusBar} from 'react-native';
+import {SafeAreaView, StatusBar, StyleSheet, ScrollView} from 'react-native';
 import Layout from '../components/layout/Layout';
 import SearchBar from '../components/SearchBar';
-import Categories from '../components/category/Categories';
+import Header from '../components/Header';
+import NowPlaying from '../components/NowPlaying';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.bgColor}>
       <StatusBar />
       <Layout>
-        <SearchBar />
-        <Categories />
-        <View>
-          <Text>Hello from HomeScreen</Text>
-        </View>
+        <ScrollView>
+          <Header />
+          <SearchBar />
+          <NowPlaying />
+        </ScrollView>
       </Layout>
     </SafeAreaView>
   );
 };
 
+const styles = StyleSheet.create({
+  bgColor: {
+    backgroundColor: '#000000',
+    flex: 1,
+  },
+});
 export default HomeScreen;
