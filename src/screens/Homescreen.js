@@ -9,13 +9,13 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.bgColor}>
       <StatusBar />
-      <Layout>
-        <ScrollView>
-          <Header />
-          <SearchBar />
-          <NowPlaying />
-        </ScrollView>
-      </Layout>
+      {/* <Layout> */}
+      <ScrollView>
+        <Header />
+        <SearchBar />
+        <NowPlaying />
+      </ScrollView>
+      {/* </Layout> */}
     </SafeAreaView>
   );
 };
