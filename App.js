@@ -6,6 +6,7 @@ import StartupScreen from './src/screens/StartupScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import SignupScreen from './src/screens/SignupScreen';
 import OtpVerify from './src/screens/OtpVerify';
+import TabBar from './src/components/layout/TabBar';
 
 const Stack = createNativeStackNavigator();
 
@@ -35,7 +36,7 @@ const App = () => {
         />
         <Stack.Screen
           name="home"
-          component={HomeScreen}
+          component={TabBar}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
