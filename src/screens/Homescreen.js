@@ -1,21 +1,20 @@
 import React from 'react';
 import {SafeAreaView, StatusBar, StyleSheet, ScrollView} from 'react-native';
-import Layout from '../components/layout/Layout';
 import SearchBar from '../components/SearchBar';
 import Header from '../components/Header';
 import NowPlaying from '../components/NowPlaying';
+import ComingSoon from '../components/ComingSoon';
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.bgColor}>
       <StatusBar />
-      {/* <Layout> */}
       <ScrollView>
         <Header />
         <SearchBar />
         <NowPlaying />
+        <ComingSoon />
       </ScrollView>
-      {/* </Layout> */}
     </SafeAreaView>
   );
 };

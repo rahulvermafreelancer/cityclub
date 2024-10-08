@@ -27,7 +27,7 @@ const CardCarousel = () => {
       />
       <Pagination
         dotsLength={CardCarouselData.length}
-        activeDotIndex={index}
+        activeDotIndex={CardCarouselData.length / 2}
         carouselRef={isCarousel}
         dotStyle={styles.paginationStyle}
         inactiveDotOpacity={0.4}

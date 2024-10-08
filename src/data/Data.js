@@ -56,4 +56,58 @@ export const CardCarouselData = [
     imgUrl: require('../assets/img/Card3.png'),
     body: 'Fun, Night, Drinks',
   },
+  {
+    _id: 1,
+    title: 'Aenean leo',
+    imgUrl: require('../assets/img/Card2.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 2,
+    title: 'In turpis',
+    imgUrl: require('../assets/img/Card1.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 3,
+    title: 'Lorem Ipsum',
+    imgUrl: require('../assets/img/Card3.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 1,
+    title: 'Aenean leo',
+    imgUrl: require('../assets/img/Card2.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 2,
+    title: 'In turpis',
+    imgUrl: require('../assets/img/Card1.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 3,
+    title: 'Lorem Ipsum',
+    imgUrl: require('../assets/img/Card3.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 1,
+    title: 'Aenean leo',
+    imgUrl: require('../assets/img/Card2.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 2,
+    title: 'In turpis',
+    imgUrl: require('../assets/img/Card1.png'),
+    body: 'Fun, Night, Drinks',
+  },
+  {
+    _id: 3,
+    title: 'Lorem Ipsum',
+    imgUrl: require('../assets/img/Card3.png'),
+    body: 'Fun, Night, Drinks',
+  },
 ];
