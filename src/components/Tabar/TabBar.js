@@ -1,14 +1,6 @@
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import {
-  View,
-  SafeAreaView,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  Image,
-} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { Image } from 'react-native';
 import HomeScreen from '../../screens/Homescreen';
 import MovieScreen from '../../screens/MovieScreen';
 import TicketsScreen from '../../screens/TicketsScreen';
@@ -19,8 +11,9 @@ const Tab = createBottomTabNavigator();
 const TabBar = () => {
   return (
     <Tab.Navigator
-      screenOptions={({route}) => ({
-        tabBarIcon: ({color, size}) => {
+      screenOptions={({ route }) => ({
+        // eslint-disable-next-line react/no-unstable-nested-components
+        tabBarIcon: ({ color, size }) => {
           let iconName;
           if (route.name === 'Home') {
             iconName = require('../../assets/img/home.png');
@@ -34,7 +27,7 @@ const TabBar = () => {
           return (
             <Image
               source={iconName}
-              style={{height: size, width: size, tintColor: color}}
+              style={{ height: size, width: size, tintColor: color }}
             />
           );
         },
@@ -51,7 +44,7 @@ const TabBar = () => {
         },
         tabBarActiveTintColor: '#FCC434',
         tabBarInactiveTintColor: '#cccccc',
-        tabBarStyle: {backgroundColor: '#000', height: 70}, // if you want more compact tbabar then remove height along with tabbaritemstyle
+        tabBarStyle: { backgroundColor: '#000', height: 70 },
         headerShown: false,
       })}>
       <Tab.Screen name="Home" component={HomeScreen} />
